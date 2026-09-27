@@ -1,0 +1,155 @@
+{
+  "audit_date": "2026-09-27",
+  "completed_at_utc": "2026-09-26T16:57:28.365005+00:00",
+  "scope": "Bibliographic identity audit of the two GLOBECOM generalized-deduplication references and GreedyGD; not a novelty or patent-exhaustiveness assessment.",
+  "result": "The three listed DOI/title/author/year mappings are correct. Aaron Hurst is the verified first author of GreedyGD. The documentation now distinguishes the 2023 GreedyGD preprint from its 2024 journal publication and the extended GD preprint from the 6-page conference record.",
+  "entries": [
+    {
+      "doi": "10.1109/globecom38437.2019.9014012",
+      "verified_title": "Generalized Deduplication: Bounds, Convergence, and Asymptotic Properties",
+      "verified_authors_in_order": [
+        "Rasmus Vestergaard",
+        "Qi Zhang",
+        "Daniel E. Lucani"
+      ],
+      "publication_year": 2019,
+      "publication_date_parts_crossref": [
+        2019,
+        12
+      ],
+      "venue": "2019 IEEE Global Communications Conference (GLOBECOM)",
+      "pages": "1-6",
+      "volume": null,
+      "issue": null,
+      "verification_sources": [
+        {
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1109/globecom38437.2019.9014012",
+          "retrieved_at_utc": "2026-09-26T16:52:28.727844+00:00",
+          "response_sha256": "c9023fee3c636eb77ff2a9a2a4dfa4c846f63d36466b11def147cd468e9210e4"
+        },
+        {
+          "provider": "OpenAlex scholarly index",
+          "url": "https://api.openalex.org/works/https://doi.org/10.1109/globecom38437.2019.9014012",
+          "retrieved_at_utc": "2026-09-26T16:52:28.743111+00:00",
+          "response_sha256": "7e4afef20b3c105bcba48ae15c5c33e294d730f338cbdc003e9b6d9dd56bb3a9"
+        },
+        {
+          "provider": "arXiv primary abstract and metadata",
+          "url": "https://arxiv.org/abs/1901.02720",
+          "retrieved_at_utc": "2026-09-26T16:52:57.372406+00:00",
+          "response_sha256": "048be42c8f7cfc9e7ddbfa07eacfff451af7c0b5a149552dd2e3f840252b30eb"
+        },
+        {
+          "provider": "arXiv primary full text",
+          "url": "https://arxiv.org/html/1901.02720",
+          "retrieved_at_utc": "2026-09-26T16:52:57.893335+00:00",
+          "response_sha256": "ce3eeb437a8066bd34a6366db99b0aa00ae3e4a63e5a414f28aacf57130eec76"
+        }
+      ],
+      "arxiv": {
+        "id": "1901.02720",
+        "verified_version": "v4",
+        "first_submission": "2019-01-09",
+        "version_date": "2019-08-07",
+        "mapping_evidence": "arXiv abstract page explicitly lists the same conference DOI, title and author order.",
+        "version_limit": "arXiv calls this a 15-page full version of the paper accepted at GLOBECOM; the conference record lists pages 1-6."
+      }
+    },
+    {
+      "doi": "10.1109/globecom38437.2019.9013957",
+      "verified_title": "Lossless Compression of Time Series Data with Generalized Deduplication",
+      "verified_authors_in_order": [
+        "Rasmus Vestergaard",
+        "Qi Zhang",
+        "Daniel E. Lucani"
+      ],
+      "publication_year": 2019,
+      "publication_date_parts_crossref": [
+        2019,
+        12
+      ],
+      "venue": "2019 IEEE Global Communications Conference (GLOBECOM)",
+      "pages": "1-6",
+      "volume": null,
+      "issue": null,
+      "verification_sources": [
+        {
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1109/globecom38437.2019.9013957",
+          "retrieved_at_utc": "2026-09-26T16:52:28.702140+00:00",
+          "response_sha256": "66ef1e723c075b7ed17e31fb087a225a5c615847854a2437abdf6925be7d32cd"
+        },
+        {
+          "provider": "OpenAlex scholarly index",
+          "url": "https://api.openalex.org/works/https://doi.org/10.1109/globecom38437.2019.9013957",
+          "retrieved_at_utc": "2026-09-26T16:52:28.757062+00:00",
+          "response_sha256": "b7ca2fe1d5b20e6045a156d8d4f26153d643ae1416944c9775987d17c8f556f1"
+        }
+      ],
+      "arxiv": null,
+      "limits": [
+        "The institutional PDF URL could not be retrieved in this final audit because its HTTPS certificate was expired; HTTP redirected to the same failing HTTPS endpoint. Bibliographic fields were verified independently through Crossref and OpenAlex. No new specific full-text claim relies on this unsuccessful retrieval."
+      ],
+      "unretrieved_url": "https://pure.au.dk/ws/files/187638094/GLOBECOM2019.pdf"
+    },
+    {
+      "doi": "10.1109/tii.2024.3353913",
+      "verified_title": "GreedyGD: Enhanced Generalized Deduplication for Direct Analytics in IoT",
+      "verified_authors_in_order": [
+        "Aaron Hurst",
+        "Daniel E. Lucani",
+        "Qi Zhang"
+      ],
+      "publication_year": 2024,
+      "publication_date_parts_crossref": [
+        2024,
+        4
+      ],
+      "venue": "IEEE Transactions on Industrial Informatics",
+      "pages": "6954-6962",
+      "volume": "20",
+      "issue": "4",
+      "verification_sources": [
+        {
+          "provider": "Crossref publisher metadata",
+          "url": "https://api.crossref.org/works/10.1109/tii.2024.3353913",
+          "retrieved_at_utc": "2026-09-26T16:52:28.714416+00:00",
+          "response_sha256": "af2e0d9c839175d2936a5a99935476f5e416088dc435a83998a64afe2714e528"
+        },
+        {
+          "provider": "OpenAlex scholarly index",
+          "url": "https://api.openalex.org/works/https://doi.org/10.1109/tii.2024.3353913",
+          "retrieved_at_utc": "2026-09-26T16:52:28.767806+00:00",
+          "response_sha256": "6b93eee50f336b4d13f898b4e4e70cba3246a65dee6a42258a3ba05160a1293d"
+        },
+        {
+          "provider": "arXiv primary abstract and metadata",
+          "url": "https://arxiv.org/abs/2304.07240",
+          "retrieved_at_utc": "2026-09-26T16:52:57.438687+00:00",
+          "response_sha256": "96126e664d92e0692b21df1fa3c1f20e03e481f1e10d8cebd5915d683567ff29"
+        },
+        {
+          "provider": "arXiv primary full text",
+          "url": "https://arxiv.org/html/2304.07240",
+          "retrieved_at_utc": "2026-09-26T16:52:58.189215+00:00",
+          "response_sha256": "9f47be818f3620ec4335a1080331f9abe2a006c4f05a449d0b581d5643bb4d21"
+        }
+      ],
+      "arxiv": {
+        "id": "2304.07240",
+        "verified_version": "v1",
+        "first_submission": "2023-04-14",
+        "version_date": "2023-04-14",
+        "mapping_evidence": "arXiv abstract page and full text have the same title and the same three authors as the 2024 publisher metadata.",
+        "version_limit": "This is the 2023 preprint, not the 2024 journal typeset version. The arXiv abstract page does not list the journal DOI. Full-text identity between versions was not established."
+      },
+      "additional_retrieval_limit": "The Aarhus institutional publication page also failed certificate verification in this audit; the Crossref/OpenAlex/arXiv checks all succeeded."
+    }
+  ],
+  "excluded_claims": [
+    "No claim that preprint and publisher full texts are identical.",
+    "No claim of exhaustive prior-art search or absence of other work.",
+    "No source-code retrieval or copying was used in this audit."
+  ]
+}

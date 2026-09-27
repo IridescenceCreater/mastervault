@@ -1,0 +1,67 @@
+{
+  "status": "passed",
+  "purpose": "remove prior 128 MiB demo limit; verify a bounded streaming path",
+  "synthetic_input": true,
+  "real_master_audio": false,
+  "input_bytes": 138412076,
+  "pcm_info": {
+    "container": "wav",
+    "kind": "pcm",
+    "channels": 2,
+    "rate": 192000,
+    "frames": 23068672,
+    "width": 3,
+    "valid_bits": 24,
+    "data_offset": 44,
+    "data_size": 138412032,
+    "block_size": 0,
+    "bit_order": "msb"
+  },
+  "archive_bytes": 151552,
+  "mode": "raw",
+  "codecs": "stdlib",
+  "average_bytes": 1048576,
+  "archive_verified": true,
+  "full_file_byte_exact": true,
+  "source_sha256": "209d48cbb9130b337869d1596bf25234b6993a2fa05c539085cbb4f0bccee990",
+  "restored_sha256": "209d48cbb9130b337869d1596bf25234b6993a2fa05c539085cbb4f0bccee990",
+  "source_read_audit": {
+    "read_calls": 673,
+    "largest_requested_read_bytes": 1048576,
+    "total_bytes_read_across_passes": 692060424
+  },
+  "enforced_maximum_source_read_bytes": 8388608,
+  "peak_resident_bytes": 77758464,
+  "peak_memory_metric": "Windows GetProcessMemoryInfo.PeakWorkingSetSize",
+  "peak_resident_before_archive_bytes": 32198656,
+  "peak_resident_to_input_ratio": 0.56179,
+  "timing_seconds": {
+    "generation": 0.099332,
+    "pack_including_internal_verification": 37.45213,
+    "separate_verify": 1.342546,
+    "unpack": 1.174925,
+    "independent_byte_compare": 0.225379,
+    "archive_work_total": 40.195054
+  },
+  "objects": 5,
+  "pieces": 34,
+  "implementation_sha256": {
+    "mastervault.py": "116259a3fb9897d9cf658cb201de013aabb219e8390bc33ac36c0fb7791f8d15",
+    "formats.py": "7c4a9e0f56ef4cbcaba5a4455fbc4595e76d392efa5d96d78f72db22aaf6418d",
+    "transforms.py": "5e8f329e2f5f875d0226d56885b8fa15651f0902c0f9c0412d8d36e03fecc90e",
+    "codecs_layer.py": "32de63b90cbc681f90b29ea571568a3c1008a7c8c00a8b466a2f74892c7c601b",
+    "large_file_check.py": "1187b1291ee1af97c8bd79844875d814bf73793b788d978211e91fb6b170f070"
+  },
+  "completed_at_utc": "2026-09-26T16:49:19.035532+00:00",
+  "python": "3.13.9 | packaged by Anaconda, Inc. | (main, Oct 21 2025, 19:09:58) [MSC v.1929 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26220-SP0",
+  "limitations": [
+    "Highly repetitive generated PCM is intentionally easy to compress.",
+    "raw mode exercises storage streaming, not PCM semantic normalization throughput.",
+    "Peak memory is for one Python worker process, including imports and codec allocations.",
+    "One workload and size cannot establish asymptotic memory bounds or production performance."
+  ],
+  "isolated_worker": true,
+  "temporary_large_audio_removed": true,
+  "parent_elapsed_seconds": 40.856693
+}

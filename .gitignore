@@ -1,0 +1,42 @@
+# Python and local IDE state
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.idea/
+.pytest_cache/
+
+# Audio, archives, and generated working data
+*.wav
+*.rf64
+*.flac
+*.wv
+*.dsf
+*.dff
+*.mva
+*.mv
+*.zip
+*.7z
+*.tmp
+*.sqlite
+*.sqlite-*
+my-demo/
+demo_example/
+new-benchmark/
+new-large-check.json
+new-verification.json
+new-verification.tests.log
+large-scratch/
+odysseus_full_run/
+corpus/
+archives/
+restored/
+reference/
+scratch/
+work/
+
+# Credentials and local environment settings
+.env
+.env.*
+*.pem
+*.key

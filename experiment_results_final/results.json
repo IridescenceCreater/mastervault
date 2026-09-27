@@ -1,0 +1,4315 @@
+{
+  "schema_version": 1,
+  "generated_at_utc": "2026-09-26T16:58:02.235663+00:00",
+  "environment": {
+    "python": "3.13.9",
+    "platform": "Windows-11-10.0.26220-SP0"
+  },
+  "tools": {
+    "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+    "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+    "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE"
+  },
+  "tool_versions": {
+    "wavpack": [
+      "wavpack 5.9.0",
+      "libwavpack 5.9.0"
+    ],
+    "wvunpack": [
+      "wvunpack 5.9.0",
+      "libwavpack 5.9.0"
+    ],
+    "ffmpeg": [
+      "ffmpeg version 8.1.2-full_build-www.gyan.dev Copyright (c) 2000-2026 the FFmpeg developers",
+      "built with gcc 16.1.0 (Rev2, Built by MSYS2 project)",
+      "configuration: --enable-gpl --enable-version3 --enable-static --disable-w32threads --disable-autodetect --enable-cairo --enable-fontconfig --enable-iconv --enable-gnutls --enable-lcms2 --enable-libxml2 --enable-gmp --enable-bzlib --enable-lzma --enable-libsnappy --enable-zlib --enable-librist --enable-libsrt --enable-libssh --enable-libzmq --enable-avisynth --enable-libbluray --enable-libcaca --enable-libdvdnav --enable-libdvdread --enable-sdl2 --enable-libaribb24 --enable-libaribcaption --enable-libdav1d --enable-libdavs2 --enable-libopenjpeg --enable-libquirc --enable-libuavs3d --enable-libxevd --enable-libzvbi --enable-liboapv --enable-libqrencode --enable-librav1e --enable-libsvtav1 --enable-libvvenc --enable-libwebp --enable-libx264 --enable-libx265 --enable-libxavs2 --enable-libxeve --enable-libxvid --enable-libaom --enable-libjxl --enable-libsvtjpegxs --enable-libvpx --enable-mediafoundation --enable-libass --enable-frei0r --enable-libfreetype --enable-libfribidi --enable-libharfbuzz --enable-liblensfun --enable-libvidstab --enable-libvmaf --enable-libzimg --enable-amf --enable-cuda-llvm --enable-cuvid --enable-dxva2 --enable-d3d11va --enable-d3d12va --enable-ffnvcodec --enable-libvpl --enable-nvdec --enable-nvenc --enable-vaapi --enable-libshaderc --enable-vulkan --enable-libplacebo --enable-opencl --enable-libcdio --enable-openal --enable-libgme --enable-libmodplug --enable-libopenmpt --enable-libopencore-amrwb --enable-libmp3lame --enable-libshine --enable-libtheora --enable-libtwolame --enable-libvo-amrwbenc --enable-libcodec2 --enable-libilbc --enable-libgsm --enable-liblc3 --enable-libopencore-amrnb --enable-libopus --enable-libspeex --enable-libvorbis --enable-ladspa --enable-libbs2b --enable-libflite --enable-libmysofa --enable-librubberband --enable-libsoxr --enable-chromaprint --enable-whisper"
+    ]
+  },
+  "source_sha256": {
+    "mastervault.py": "116259a3fb9897d9cf658cb201de013aabb219e8390bc33ac36c0fb7791f8d15",
+    "formats.py": "7c4a9e0f56ef4cbcaba5a4455fbc4595e76d392efa5d96d78f72db22aaf6418d",
+    "transforms.py": "5e8f329e2f5f875d0226d56885b8fa15651f0902c0f9c0412d8d36e03fecc90e",
+    "codecs_layer.py": "32de63b90cbc681f90b29ea571568a3c1008a7c8c00a8b466a2f74892c7c601b",
+    "fixtures.py": "5130d29c40d4b18a2262c331b15e2139cefdd86eb76089ac1545c7b0abe7e555",
+    "benchmark.py": "ed2d0f3c26a1ac936681c788952bb67cee0f7ab49fac23cdea6e2ed49382b96f"
+  },
+  "source_sha256_at_start": {
+    "mastervault.py": "116259a3fb9897d9cf658cb201de013aabb219e8390bc33ac36c0fb7791f8d15",
+    "formats.py": "7c4a9e0f56ef4cbcaba5a4455fbc4595e76d392efa5d96d78f72db22aaf6418d",
+    "transforms.py": "5e8f329e2f5f875d0226d56885b8fa15651f0902c0f9c0412d8d36e03fecc90e",
+    "codecs_layer.py": "32de63b90cbc681f90b29ea571568a3c1008a7c8c00a8b466a2f74892c7c601b",
+    "fixtures.py": "5130d29c40d4b18a2262c331b15e2139cefdd86eb76089ac1545c7b0abe7e555",
+    "benchmark.py": "ed2d0f3c26a1ac936681c788952bb67cee0f7ab49fac23cdea6e2ed49382b96f"
+  },
+  "source_files_changed_during_run": false,
+  "source_hash_note": "本轮在主模块导入前与结束时记录并核对mastervault.py、formats.py、transforms.py、codecs_layer.py、fixtures.py、benchmark.py的SHA-256；六文件起止完全一致。README、启动器和验收脚本不属于该算法/实验冻结集合。source_sha256为结束值，source_sha256_at_start为开始值。",
+  "average": 16384,
+  "elapsed_seconds": 355.5993987999973,
+  "synthetic_only": true,
+  "groups": [
+    {
+      "name": "pcm24_96000",
+      "original_bytes": 196748,
+      "files": [
+        {
+          "name": "synth_tonal_24bit_96000.wav",
+          "bytes": 196748,
+          "sha256": "4c95037799f19b1ba4f837cb662cd409aec71364ce7e7a9f3f72e91f64c6dfd7",
+          "layout": {
+            "container": "wav",
+            "kind": "pcm",
+            "channels": 2,
+            "rate": 96000,
+            "frames": 32768,
+            "width": 3,
+            "valid_bits": 24,
+            "data_offset": 108,
+            "data_size": 196608,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 1,
+        "original_bytes": 196748,
+        "archive_bytes": 131072,
+        "strategy": "native",
+        "objects": 18,
+        "pieces": 18,
+        "candidate_bytes": {
+          "raw": 196608,
+          "native": 131072,
+          "semantic": 135168,
+          "hybrid": 131072
+        },
+        "net_saving_bytes": 65676,
+        "net_saving_percent": 33.381,
+        "selected_recipes": {
+          "native": 1
+        },
+        "codecs": {
+          "flac": 8,
+          "lzma": 8,
+          "raw": 2
+        },
+        "references_reused": 0,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\pcm24_96000.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 180821,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_96000\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.013944200007244945,
+          "total_seconds": 0.03578260001086164,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 113385,
+          "verified": true,
+          "files": [
+            {
+              "source": "synth_tonal_24bit_96000.wav",
+              "source_bytes": 196748,
+              "source_sha256": "4c95037799f19b1ba4f837cb662cd409aec71364ce7e7a9f3f72e91f64c6dfd7",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\pcm24_96000\\synth_tonal_24bit_96000.wav",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_96000\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.09617580000485759,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_96000\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_96000\\wavpack\\restored\\synth_tonal_24bit_96000.wav"
+                ],
+                "returncode": 0,
+                "seconds": 0.0829987000033725,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 112946
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.18678289999661501,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_96000\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 112946
+        },
+        "flac": {
+          "status": "complete",
+          "verified": true,
+          "archive_bytes": 60770,
+          "files": [
+            {
+              "source": "synth_tonal_24bit_96000.wav",
+              "source_bytes": 196748,
+              "source_sha256": "4c95037799f19b1ba4f837cb662cd409aec71364ce7e7a9f3f72e91f64c6dfd7",
+              "data_offset": 108,
+              "data_size": 196608,
+              "format": "s24le",
+              "rate": 96000,
+              "channels": 2,
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-f",
+                  "s24le",
+                  "-ar",
+                  "96000",
+                  "-ac",
+                  "2",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_96000\\flac\\000.pcm",
+                  "-c:a",
+                  "flac",
+                  "-strict",
+                  "experimental",
+                  "-compression_level",
+                  "8",
+                  "-sample_fmt",
+                  "s32",
+                  "-bits_per_raw_sample",
+                  "24",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_96000\\flac\\000.flac"
+                ],
+                "returncode": 0,
+                "seconds": 0.17311709999921732,
+                "stdout": "",
+                "stderr": ""
+              },
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_96000\\flac\\000.flac",
+                  "-c:a",
+                  "pcm_s24le",
+                  "-f",
+                  "s24le",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_96000\\flac\\000.decoded.pcm"
+                ],
+                "returncode": 0,
+                "seconds": 0.15981310000643134,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "audio_member": "000/audio.flac",
+              "wrapper_spans": [
+                {
+                  "offset": 0,
+                  "length": 108,
+                  "member": "000/wrapper-0.bin"
+                },
+                {
+                  "offset": 196716,
+                  "length": 32,
+                  "member": "000/wrapper-1.bin"
+                }
+              ],
+              "encoded_audio_bytes": 59906
+            }
+          ],
+          "codec": "FFmpeg FLAC level 8, -strict experimental for exact 32-bit support + exact source wrapper spans in ZIP",
+          "total_seconds": 0.35198310000123456,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_96000\\flac\\flac_with_exact_wrappers.zip"
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": 49749,
+        "saving_vs_wavpack_bytes": -17687,
+        "saving_vs_flac_bytes": -70302
+      },
+      "pack_seconds": 10.833359800002654,
+      "verification_seconds": 2.7067096999962814,
+      "verification": {
+        "verified": true,
+        "files": 1,
+        "original_bytes": 196748,
+        "archive_bytes": 131072,
+        "strategy": "native",
+        "objects": 18,
+        "pieces": 18
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 1,
+        "original_bytes": 196748,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\pcm24_96000"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "created",
+      "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\archives\\pcm24_96000.mv"
+    },
+    {
+      "name": "pcm24_192000",
+      "original_bytes": 196748,
+      "files": [
+        {
+          "name": "synth_tonal_24bit_192000.wav",
+          "bytes": 196748,
+          "sha256": "fd0366730d115f6df865758b76bddf7c5851938354a95093058c61d44f071a44",
+          "layout": {
+            "container": "wav",
+            "kind": "pcm",
+            "channels": 2,
+            "rate": 192000,
+            "frames": 32768,
+            "width": 3,
+            "valid_bits": 24,
+            "data_offset": 108,
+            "data_size": 196608,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 1,
+        "original_bytes": 196748,
+        "archive_bytes": 122880,
+        "strategy": "native",
+        "objects": 18,
+        "pieces": 18,
+        "candidate_bytes": {
+          "raw": 212992,
+          "native": 122880,
+          "semantic": 139264,
+          "hybrid": 122880
+        },
+        "net_saving_bytes": 73868,
+        "net_saving_percent": 37.544,
+        "selected_recipes": {
+          "native": 1
+        },
+        "codecs": {
+          "flac": 16,
+          "raw": 2
+        },
+        "references_reused": 0,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\pcm24_192000.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 189645,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_192000\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.013939299999037758,
+          "total_seconds": 0.034101199998985976,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 109240,
+          "verified": true,
+          "files": [
+            {
+              "source": "synth_tonal_24bit_192000.wav",
+              "source_bytes": 196748,
+              "source_sha256": "fd0366730d115f6df865758b76bddf7c5851938354a95093058c61d44f071a44",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\pcm24_192000\\synth_tonal_24bit_192000.wav",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_192000\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.09091419998730998,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_192000\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_192000\\wavpack\\restored\\synth_tonal_24bit_192000.wav"
+                ],
+                "returncode": 0,
+                "seconds": 0.0813071000011405,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 108798
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.18028109999431763,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_192000\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 108798
+        },
+        "flac": {
+          "status": "complete",
+          "verified": true,
+          "archive_bytes": 49454,
+          "files": [
+            {
+              "source": "synth_tonal_24bit_192000.wav",
+              "source_bytes": 196748,
+              "source_sha256": "fd0366730d115f6df865758b76bddf7c5851938354a95093058c61d44f071a44",
+              "data_offset": 108,
+              "data_size": 196608,
+              "format": "s24le",
+              "rate": 192000,
+              "channels": 2,
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-f",
+                  "s24le",
+                  "-ar",
+                  "192000",
+                  "-ac",
+                  "2",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_192000\\flac\\000.pcm",
+                  "-c:a",
+                  "flac",
+                  "-strict",
+                  "experimental",
+                  "-compression_level",
+                  "8",
+                  "-sample_fmt",
+                  "s32",
+                  "-bits_per_raw_sample",
+                  "24",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_192000\\flac\\000.flac"
+                ],
+                "returncode": 0,
+                "seconds": 0.1749746999994386,
+                "stdout": "",
+                "stderr": ""
+              },
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_192000\\flac\\000.flac",
+                  "-c:a",
+                  "pcm_s24le",
+                  "-f",
+                  "s24le",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_192000\\flac\\000.decoded.pcm"
+                ],
+                "returncode": 0,
+                "seconds": 0.15992599999299273,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "audio_member": "000/audio.flac",
+              "wrapper_spans": [
+                {
+                  "offset": 0,
+                  "length": 108,
+                  "member": "000/wrapper-0.bin"
+                },
+                {
+                  "offset": 196716,
+                  "length": 32,
+                  "member": "000/wrapper-1.bin"
+                }
+              ],
+              "encoded_audio_bytes": 48591
+            }
+          ],
+          "codec": "FFmpeg FLAC level 8, -strict experimental for exact 32-bit support + exact source wrapper spans in ZIP",
+          "total_seconds": 0.3547257000027457,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm24_192000\\flac\\flac_with_exact_wrappers.zip"
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": 66765,
+        "saving_vs_wavpack_bytes": -13640,
+        "saving_vs_flac_bytes": -73426
+      },
+      "pack_seconds": 13.981360899997526,
+      "verification_seconds": 5.468400800004019,
+      "verification": {
+        "verified": true,
+        "files": 1,
+        "original_bytes": 196748,
+        "archive_bytes": 122880,
+        "strategy": "native",
+        "objects": 18,
+        "pieces": 18
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 1,
+        "original_bytes": 196748,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\pcm24_192000"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "created",
+      "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\archives\\pcm24_192000.mv"
+    },
+    {
+      "name": "pcm_bitdepth_versions",
+      "original_bytes": 1442068,
+      "files": [
+        {
+          "name": "base_24bit_96k.wav",
+          "bytes": 393260,
+          "sha256": "750146ba7b61141787d975b06d228337e7ea0d7a86efbc19b62929d200e0a3ee",
+          "layout": {
+            "container": "wav",
+            "kind": "pcm",
+            "channels": 2,
+            "rate": 96000,
+            "frames": 65536,
+            "width": 3,
+            "valid_bits": 24,
+            "data_offset": 44,
+            "data_size": 393216,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        },
+        {
+          "name": "left_aligned_32valid24_96k.wav",
+          "bytes": 524356,
+          "sha256": "660fb61e6a131594b3dbb431ef93fcc3c27bdb47e963d04cd1ea9ed720726484",
+          "layout": {
+            "container": "wav",
+            "kind": "pcm",
+            "channels": 2,
+            "rate": 96000,
+            "frames": 65536,
+            "width": 4,
+            "valid_bits": 24,
+            "data_offset": 68,
+            "data_size": 524288,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        },
+        {
+          "name": "swap_polarity_offset_32valid24.wav",
+          "bytes": 524452,
+          "sha256": "579669a950f2aa1e9e60dc2ce854d47e862862523994f90f517f57eac9e44acb",
+          "layout": {
+            "container": "wav",
+            "kind": "pcm",
+            "channels": 2,
+            "rate": 96000,
+            "frames": 65536,
+            "width": 4,
+            "valid_bits": 24,
+            "data_offset": 132,
+            "data_size": 524288,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 3,
+        "original_bytes": 1442068,
+        "archive_bytes": 454656,
+        "strategy": "semantic",
+        "objects": 36,
+        "pieces": 100,
+        "candidate_bytes": {
+          "raw": 1298432,
+          "native": 1236992,
+          "semantic": 454656,
+          "hybrid": 1236992
+        },
+        "net_saving_bytes": 987412,
+        "net_saving_percent": 68.472,
+        "selected_recipes": {
+          "semantic": 3
+        },
+        "codecs": {
+          "flac": 32,
+          "raw": 3,
+          "zlib": 1
+        },
+        "references_reused": 64,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\pcm_bitdepth_versions.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 1230944,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.07464940000500064,
+          "total_seconds": 0.12767580000218004,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 1050885,
+          "verified": true,
+          "files": [
+            {
+              "source": "base_24bit_96k.wav",
+              "source_bytes": 393260,
+              "source_sha256": "750146ba7b61141787d975b06d228337e7ea0d7a86efbc19b62929d200e0a3ee",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\pcm_bitdepth_versions\\base_24bit_96k.wav",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.09934029998839833,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\wavpack\\restored\\base_24bit_96k.wav"
+                ],
+                "returncode": 0,
+                "seconds": 0.08357879999675788,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 349966
+            },
+            {
+              "source": "left_aligned_32valid24_96k.wav",
+              "source_bytes": 524356,
+              "source_sha256": "660fb61e6a131594b3dbb431ef93fcc3c27bdb47e963d04cd1ea9ed720726484",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\pcm_bitdepth_versions\\left_aligned_32valid24_96k.wav",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\wavpack\\001.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.14662010000029113,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\wavpack\\001.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\wavpack\\restored\\left_aligned_32valid24_96k.wav"
+                ],
+                "returncode": 0,
+                "seconds": 0.08504799999354873,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 349990
+            },
+            {
+              "source": "swap_polarity_offset_32valid24.wav",
+              "source_bytes": 524452,
+              "source_sha256": "579669a950f2aa1e9e60dc2ce854d47e862862523994f90f517f57eac9e44acb",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\pcm_bitdepth_versions\\swap_polarity_offset_32valid24.wav",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\wavpack\\002.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.101021700000274,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\wavpack\\002.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\wavpack\\restored\\swap_polarity_offset_32valid24.wav"
+                ],
+                "returncode": 0,
+                "seconds": 0.0843048000097042,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 350070
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.622063300004811,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 1050026
+        },
+        "flac": {
+          "status": "complete",
+          "verified": true,
+          "archive_bytes": 1094366,
+          "files": [
+            {
+              "source": "base_24bit_96k.wav",
+              "source_bytes": 393260,
+              "source_sha256": "750146ba7b61141787d975b06d228337e7ea0d7a86efbc19b62929d200e0a3ee",
+              "data_offset": 44,
+              "data_size": 393216,
+              "format": "s24le",
+              "rate": 96000,
+              "channels": 2,
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-f",
+                  "s24le",
+                  "-ar",
+                  "96000",
+                  "-ac",
+                  "2",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\flac\\000.pcm",
+                  "-c:a",
+                  "flac",
+                  "-strict",
+                  "experimental",
+                  "-compression_level",
+                  "8",
+                  "-sample_fmt",
+                  "s32",
+                  "-bits_per_raw_sample",
+                  "24",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\flac\\000.flac"
+                ],
+                "returncode": 0,
+                "seconds": 0.17347439999866765,
+                "stdout": "",
+                "stderr": ""
+              },
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\flac\\000.flac",
+                  "-c:a",
+                  "pcm_s24le",
+                  "-f",
+                  "s24le",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\flac\\000.decoded.pcm"
+                ],
+                "returncode": 0,
+                "seconds": 0.16130320000229403,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "audio_member": "000/audio.flac",
+              "wrapper_spans": [
+                {
+                  "offset": 0,
+                  "length": 44,
+                  "member": "000/wrapper-0.bin"
+                }
+              ],
+              "encoded_audio_bytes": 358785
+            },
+            {
+              "source": "left_aligned_32valid24_96k.wav",
+              "source_bytes": 524356,
+              "source_sha256": "660fb61e6a131594b3dbb431ef93fcc3c27bdb47e963d04cd1ea9ed720726484",
+              "data_offset": 68,
+              "data_size": 524288,
+              "format": "s32le",
+              "rate": 96000,
+              "channels": 2,
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-f",
+                  "s32le",
+                  "-ar",
+                  "96000",
+                  "-ac",
+                  "2",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\flac\\001.pcm",
+                  "-c:a",
+                  "flac",
+                  "-strict",
+                  "experimental",
+                  "-compression_level",
+                  "8",
+                  "-sample_fmt",
+                  "s32",
+                  "-bits_per_raw_sample",
+                  "32",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\flac\\001.flac"
+                ],
+                "returncode": 0,
+                "seconds": 0.1814586000109557,
+                "stdout": "",
+                "stderr": ""
+              },
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\flac\\001.flac",
+                  "-c:a",
+                  "pcm_s32le",
+                  "-f",
+                  "s32le",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\flac\\001.decoded.pcm"
+                ],
+                "returncode": 0,
+                "seconds": 0.16600610000023153,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "audio_member": "001/audio.flac",
+              "wrapper_spans": [
+                {
+                  "offset": 0,
+                  "length": 68,
+                  "member": "001/wrapper-0.bin"
+                }
+              ],
+              "encoded_audio_bytes": 366991
+            },
+            {
+              "source": "swap_polarity_offset_32valid24.wav",
+              "source_bytes": 524452,
+              "source_sha256": "579669a950f2aa1e9e60dc2ce854d47e862862523994f90f517f57eac9e44acb",
+              "data_offset": 132,
+              "data_size": 524288,
+              "format": "s32le",
+              "rate": 96000,
+              "channels": 2,
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-f",
+                  "s32le",
+                  "-ar",
+                  "96000",
+                  "-ac",
+                  "2",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\flac\\002.pcm",
+                  "-c:a",
+                  "flac",
+                  "-strict",
+                  "experimental",
+                  "-compression_level",
+                  "8",
+                  "-sample_fmt",
+                  "s32",
+                  "-bits_per_raw_sample",
+                  "32",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\flac\\002.flac"
+                ],
+                "returncode": 0,
+                "seconds": 0.1667388000059873,
+                "stdout": "",
+                "stderr": ""
+              },
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\flac\\002.flac",
+                  "-c:a",
+                  "pcm_s32le",
+                  "-f",
+                  "s32le",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\flac\\002.decoded.pcm"
+                ],
+                "returncode": 0,
+                "seconds": 0.15465450000192504,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "audio_member": "002/audio.flac",
+              "wrapper_spans": [
+                {
+                  "offset": 0,
+                  "length": 132,
+                  "member": "002/wrapper-0.bin"
+                },
+                {
+                  "offset": 524420,
+                  "length": 32,
+                  "member": "002/wrapper-1.bin"
+                }
+              ],
+              "encoded_audio_bytes": 366991
+            }
+          ],
+          "codec": "FFmpeg FLAC level 8, -strict experimental for exact 32-bit support + exact source wrapper spans in ZIP",
+          "total_seconds": 1.0736236999946414,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_bitdepth_versions\\flac\\flac_with_exact_wrappers.zip"
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": 776288,
+        "saving_vs_wavpack_bytes": 596229,
+        "saving_vs_flac_bytes": 639710
+      },
+      "pack_seconds": 52.8386976000038,
+      "verification_seconds": 11.78298000000359,
+      "verification": {
+        "verified": true,
+        "files": 3,
+        "original_bytes": 1442068,
+        "archive_bytes": 454656,
+        "strategy": "semantic",
+        "objects": 36,
+        "pieces": 100
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 3,
+        "original_bytes": 1442068,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\pcm_bitdepth_versions"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "created",
+      "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\archives\\pcm_bitdepth_versions.mv"
+    },
+    {
+      "name": "pcm_dirty_lsb",
+      "original_bytes": 1048712,
+      "files": [
+        {
+          "name": "clean_32valid24.wav",
+          "bytes": 524356,
+          "sha256": "501d06e5d30d95934aca8d3787a8ed34567df33a8698583a3f78e340e78f4b5e",
+          "layout": {
+            "container": "wav",
+            "kind": "pcm",
+            "channels": 2,
+            "rate": 192000,
+            "frames": 65536,
+            "width": 4,
+            "valid_bits": 24,
+            "data_offset": 68,
+            "data_size": 524288,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        },
+        {
+          "name": "dirty_lsb_32valid24.wav",
+          "bytes": 524356,
+          "sha256": "d7ed46f5f595a8bef67c132f0cc0fc423e16b6ec22cac3e338f00f50f945e797",
+          "layout": {
+            "container": "wav",
+            "kind": "pcm",
+            "channels": 2,
+            "rate": 192000,
+            "frames": 65536,
+            "width": 4,
+            "valid_bits": 24,
+            "data_offset": 68,
+            "data_size": 524288,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 1048712,
+        "archive_bytes": 974848,
+        "strategy": "native",
+        "objects": 65,
+        "pieces": 66,
+        "candidate_bytes": {
+          "raw": 1007616,
+          "native": 974848,
+          "semantic": 983040,
+          "hybrid": 974848
+        },
+        "net_saving_bytes": 73864,
+        "net_saving_percent": 7.043,
+        "selected_recipes": {
+          "native": 2
+        },
+        "codecs": {
+          "flac": 64,
+          "raw": 1
+        },
+        "references_reused": 1,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\pcm_dirty_lsb.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 940923,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.051700399999390356,
+          "total_seconds": 0.08800859999610111,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 832018,
+          "verified": true,
+          "files": [
+            {
+              "source": "clean_32valid24.wav",
+              "source_bytes": 524356,
+              "source_sha256": "501d06e5d30d95934aca8d3787a8ed34567df33a8698583a3f78e340e78f4b5e",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\pcm_dirty_lsb\\clean_32valid24.wav",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.09695819999615196,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\wavpack\\restored\\clean_32valid24.wav"
+                ],
+                "returncode": 0,
+                "seconds": 0.07966899999883026,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 349990
+            },
+            {
+              "source": "dirty_lsb_32valid24.wav",
+              "source_bytes": 524356,
+              "source_sha256": "d7ed46f5f595a8bef67c132f0cc0fc423e16b6ec22cac3e338f00f50f945e797",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "--force-even-byte-depth",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\pcm_dirty_lsb\\dirty_lsb_32valid24.wav",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\wavpack\\001-even-depth.wv"
+                ],
+                "returncode": 1,
+                "seconds": 0.07911439999588765,
+                "stdout": "",
+                "stderr": "\r\"24-bit\" file has non-zero PCM padding bytes!!                                \r\n\ruse --pre-quantize=24 to zero those bits before encoding                                \r\n\ror use -a for float files generated by CoolEdit or Audition                                \r\n"
+              },
+              "reference_mode": "raw_pcm_plus_exact_wrapper",
+              "whole_file_attempts": [
+                {
+                  "command": [
+                    "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                    "-q",
+                    "-hh",
+                    "-m",
+                    "-v",
+                    "--no-threads",
+                    "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\pcm_dirty_lsb\\dirty_lsb_32valid24.wav",
+                    "-o",
+                    "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\wavpack\\001.wv"
+                  ],
+                  "returncode": 1,
+                  "seconds": 0.07734280001022853,
+                  "stdout": "",
+                  "stderr": "\r\"24-bit\" file has non-zero PCM padding bytes!!                                \r\n\ruse --pre-quantize=24 to zero those bits before encoding                                \r\n\ror use -a for float files generated by CoolEdit or Audition                                \r\n"
+                },
+                {
+                  "command": [
+                    "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                    "-q",
+                    "-hh",
+                    "-m",
+                    "-v",
+                    "--no-threads",
+                    "--force-even-byte-depth",
+                    "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\pcm_dirty_lsb\\dirty_lsb_32valid24.wav",
+                    "-o",
+                    "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\wavpack\\001-even-depth.wv"
+                  ],
+                  "returncode": 1,
+                  "seconds": 0.07911439999588765,
+                  "stdout": "",
+                  "stderr": "\r\"24-bit\" file has non-zero PCM padding bytes!!                                \r\n\ruse --pre-quantize=24 to zero those bits before encoding                                \r\n\ror use -a for float files generated by CoolEdit or Audition                                \r\n"
+                }
+              ],
+              "raw_pcm_encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "--raw-pcm=192000,32s,2,le",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\wavpack\\001-source.pcm",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\wavpack\\001-raw-pcm.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.11203499999828637,
+                "stdout": "",
+                "stderr": ""
+              },
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "--raw",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\wavpack\\001-raw-pcm.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\wavpack\\001-restored.pcm"
+                ],
+                "returncode": 0,
+                "seconds": 0.0853657999978168,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 481110,
+              "wrapper_spans": [
+                {
+                  "offset": 0,
+                  "length": 68,
+                  "member": "wrappers/001-0.bin"
+                }
+              ],
+              "data_offset": 68,
+              "data_size": 524288,
+              "raw_format": {
+                "rate": 192000,
+                "bits": 32,
+                "channels": 2,
+                "endian": "little"
+              }
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.5607611000014003,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 831100
+        },
+        "flac": {
+          "status": "complete",
+          "verified": true,
+          "archive_bytes": 857600,
+          "files": [
+            {
+              "source": "clean_32valid24.wav",
+              "source_bytes": 524356,
+              "source_sha256": "501d06e5d30d95934aca8d3787a8ed34567df33a8698583a3f78e340e78f4b5e",
+              "data_offset": 68,
+              "data_size": 524288,
+              "format": "s32le",
+              "rate": 192000,
+              "channels": 2,
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-f",
+                  "s32le",
+                  "-ar",
+                  "192000",
+                  "-ac",
+                  "2",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\flac\\000.pcm",
+                  "-c:a",
+                  "flac",
+                  "-strict",
+                  "experimental",
+                  "-compression_level",
+                  "8",
+                  "-sample_fmt",
+                  "s32",
+                  "-bits_per_raw_sample",
+                  "32",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\flac\\000.flac"
+                ],
+                "returncode": 0,
+                "seconds": 0.16432789999817032,
+                "stdout": "",
+                "stderr": ""
+              },
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\flac\\000.flac",
+                  "-c:a",
+                  "pcm_s32le",
+                  "-f",
+                  "s32le",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\flac\\000.decoded.pcm"
+                ],
+                "returncode": 0,
+                "seconds": 0.15989650000119582,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "audio_member": "000/audio.flac",
+              "wrapper_spans": [
+                {
+                  "offset": 0,
+                  "length": 68,
+                  "member": "000/wrapper-0.bin"
+                }
+              ],
+              "encoded_audio_bytes": 366858
+            },
+            {
+              "source": "dirty_lsb_32valid24.wav",
+              "source_bytes": 524356,
+              "source_sha256": "d7ed46f5f595a8bef67c132f0cc0fc423e16b6ec22cac3e338f00f50f945e797",
+              "data_offset": 68,
+              "data_size": 524288,
+              "format": "s32le",
+              "rate": 192000,
+              "channels": 2,
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-f",
+                  "s32le",
+                  "-ar",
+                  "192000",
+                  "-ac",
+                  "2",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\flac\\001.pcm",
+                  "-c:a",
+                  "flac",
+                  "-strict",
+                  "experimental",
+                  "-compression_level",
+                  "8",
+                  "-sample_fmt",
+                  "s32",
+                  "-bits_per_raw_sample",
+                  "32",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\flac\\001.flac"
+                ],
+                "returncode": 0,
+                "seconds": 0.17720129998633638,
+                "stdout": "",
+                "stderr": ""
+              },
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\flac\\001.flac",
+                  "-c:a",
+                  "pcm_s32le",
+                  "-f",
+                  "s32le",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\flac\\001.decoded.pcm"
+                ],
+                "returncode": 0,
+                "seconds": 0.20619700000679586,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "audio_member": "001/audio.flac",
+              "wrapper_spans": [
+                {
+                  "offset": 0,
+                  "length": 68,
+                  "member": "001/wrapper-0.bin"
+                }
+              ],
+              "encoded_audio_bytes": 489731
+            }
+          ],
+          "codec": "FFmpeg FLAC level 8, -strict experimental for exact 32-bit support + exact source wrapper spans in ZIP",
+          "total_seconds": 0.752517800006899,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dirty_lsb\\flac\\flac_with_exact_wrappers.zip"
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": -33925,
+        "saving_vs_wavpack_bytes": -142830,
+        "saving_vs_flac_bytes": -117248
+      },
+      "pack_seconds": 56.89170360000571,
+      "verification_seconds": 22.34589899999264,
+      "verification": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 1048712,
+        "archive_bytes": 974848,
+        "strategy": "native",
+        "objects": 65,
+        "pieces": 66
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 2,
+        "original_bytes": 1048712,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\pcm_dirty_lsb"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "created",
+      "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\archives\\pcm_dirty_lsb.mv"
+    },
+    {
+      "name": "pcm_dither",
+      "original_bytes": 786520,
+      "files": [
+        {
+          "name": "undithered_24bit.wav",
+          "bytes": 393260,
+          "sha256": "750146ba7b61141787d975b06d228337e7ea0d7a86efbc19b62929d200e0a3ee",
+          "layout": {
+            "container": "wav",
+            "kind": "pcm",
+            "channels": 2,
+            "rate": 96000,
+            "frames": 65536,
+            "width": 3,
+            "valid_bits": 24,
+            "data_offset": 44,
+            "data_size": 393216,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        },
+        {
+          "name": "integer_dither_preserved_24bit.wav",
+          "bytes": 393260,
+          "sha256": "f262ff13c796f8a805abed5f2043bdcd9556212d260ecb94afe4dbdc63b21811",
+          "layout": {
+            "container": "wav",
+            "kind": "pcm",
+            "channels": 2,
+            "rate": 96000,
+            "frames": 65536,
+            "width": 3,
+            "valid_bits": 24,
+            "data_offset": 44,
+            "data_size": 393216,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 786520,
+        "archive_bytes": 835584,
+        "strategy": "raw",
+        "objects": 35,
+        "pieces": 35,
+        "candidate_bytes": {
+          "raw": 835584,
+          "native": 843776,
+          "semantic": 851968,
+          "hybrid": 843776
+        },
+        "net_saving_bytes": -49064,
+        "net_saving_percent": -6.238,
+        "selected_recipes": {
+          "raw": 2
+        },
+        "codecs": {
+          "zlib": 35
+        },
+        "references_reused": 0,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\pcm_dither.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 755000,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.035719500010600314,
+          "total_seconds": 0.06970610001008026,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 700570,
+          "verified": true,
+          "files": [
+            {
+              "source": "integer_dither_preserved_24bit.wav",
+              "source_bytes": 393260,
+              "source_sha256": "f262ff13c796f8a805abed5f2043bdcd9556212d260ecb94afe4dbdc63b21811",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\pcm_dither\\integer_dither_preserved_24bit.wav",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.14846569999644998,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\wavpack\\restored\\integer_dither_preserved_24bit.wav"
+                ],
+                "returncode": 0,
+                "seconds": 0.0900132999959169,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 349966
+            },
+            {
+              "source": "undithered_24bit.wav",
+              "source_bytes": 393260,
+              "source_sha256": "750146ba7b61141787d975b06d228337e7ea0d7a86efbc19b62929d200e0a3ee",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\pcm_dither\\undithered_24bit.wav",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\wavpack\\001.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.10435369999322575,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\wavpack\\001.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\wavpack\\restored\\undithered_24bit.wav"
+                ],
+                "returncode": 0,
+                "seconds": 0.08731329999864101,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 349966
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.44773989998793695,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 699932
+        },
+        "flac": {
+          "status": "complete",
+          "verified": true,
+          "archive_bytes": 718543,
+          "files": [
+            {
+              "source": "undithered_24bit.wav",
+              "source_bytes": 393260,
+              "source_sha256": "750146ba7b61141787d975b06d228337e7ea0d7a86efbc19b62929d200e0a3ee",
+              "data_offset": 44,
+              "data_size": 393216,
+              "format": "s24le",
+              "rate": 96000,
+              "channels": 2,
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-f",
+                  "s24le",
+                  "-ar",
+                  "96000",
+                  "-ac",
+                  "2",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\flac\\000.pcm",
+                  "-c:a",
+                  "flac",
+                  "-strict",
+                  "experimental",
+                  "-compression_level",
+                  "8",
+                  "-sample_fmt",
+                  "s32",
+                  "-bits_per_raw_sample",
+                  "24",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\flac\\000.flac"
+                ],
+                "returncode": 0,
+                "seconds": 0.1828700000041863,
+                "stdout": "",
+                "stderr": ""
+              },
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\flac\\000.flac",
+                  "-c:a",
+                  "pcm_s24le",
+                  "-f",
+                  "s24le",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\flac\\000.decoded.pcm"
+                ],
+                "returncode": 0,
+                "seconds": 0.17052749999857042,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "audio_member": "000/audio.flac",
+              "wrapper_spans": [
+                {
+                  "offset": 0,
+                  "length": 44,
+                  "member": "000/wrapper-0.bin"
+                }
+              ],
+              "encoded_audio_bytes": 358785
+            },
+            {
+              "source": "integer_dither_preserved_24bit.wav",
+              "source_bytes": 393260,
+              "source_sha256": "f262ff13c796f8a805abed5f2043bdcd9556212d260ecb94afe4dbdc63b21811",
+              "data_offset": 44,
+              "data_size": 393216,
+              "format": "s24le",
+              "rate": 96000,
+              "channels": 2,
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-f",
+                  "s24le",
+                  "-ar",
+                  "96000",
+                  "-ac",
+                  "2",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\flac\\001.pcm",
+                  "-c:a",
+                  "flac",
+                  "-strict",
+                  "experimental",
+                  "-compression_level",
+                  "8",
+                  "-sample_fmt",
+                  "s32",
+                  "-bits_per_raw_sample",
+                  "24",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\flac\\001.flac"
+                ],
+                "returncode": 0,
+                "seconds": 0.175786199994036,
+                "stdout": "",
+                "stderr": ""
+              },
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\flac\\001.flac",
+                  "-c:a",
+                  "pcm_s24le",
+                  "-f",
+                  "s24le",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\flac\\001.decoded.pcm"
+                ],
+                "returncode": 0,
+                "seconds": 0.17264970000542235,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "audio_member": "001/audio.flac",
+              "wrapper_spans": [
+                {
+                  "offset": 0,
+                  "length": 44,
+                  "member": "001/wrapper-0.bin"
+                }
+              ],
+              "encoded_audio_bytes": 358785
+            }
+          ],
+          "codec": "FFmpeg FLAC level 8, -strict experimental for exact 32-bit support + exact source wrapper spans in ZIP",
+          "total_seconds": 0.7437268000066979,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_dither\\flac\\flac_with_exact_wrappers.zip"
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": -80584,
+        "saving_vs_wavpack_bytes": -135014,
+        "saving_vs_flac_bytes": -117041
+      },
+      "pack_seconds": 46.683250100002624,
+      "verification_seconds": 0.11573589999170508,
+      "verification": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 786520,
+        "archive_bytes": 835584,
+        "strategy": "raw",
+        "objects": 35,
+        "pieces": 35
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 2,
+        "original_bytes": 786520,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\pcm_dither"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "skipped_no_net_savings",
+      "archive_path": null
+    },
+    {
+      "name": "pcm_extremes",
+      "original_bytes": 14480,
+      "files": [
+        {
+          "name": "signed_extremes_24.wav",
+          "bytes": 6212,
+          "sha256": "655575708306c43c22343ae1de6a338d6cc39642569cba733cfe2254ca517d62",
+          "layout": {
+            "container": "wav",
+            "kind": "pcm",
+            "channels": 2,
+            "rate": 192000,
+            "frames": 1028,
+            "width": 3,
+            "valid_bits": 24,
+            "data_offset": 44,
+            "data_size": 6168,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        },
+        {
+          "name": "signed_extremes_32.wav",
+          "bytes": 8268,
+          "sha256": "615611aae523008e735d1ec52fa353559aacab1b708c6ff387866fcf586a356a",
+          "layout": {
+            "container": "wav",
+            "kind": "pcm",
+            "channels": 2,
+            "rate": 192000,
+            "frames": 1028,
+            "width": 4,
+            "valid_bits": 32,
+            "data_offset": 44,
+            "data_size": 8224,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 14480,
+        "archive_bytes": 49152,
+        "strategy": "raw",
+        "objects": 2,
+        "pieces": 2,
+        "candidate_bytes": {
+          "raw": 49152,
+          "native": 49152,
+          "semantic": 49152,
+          "hybrid": 49152
+        },
+        "net_saving_bytes": -34672,
+        "net_saving_percent": -239.448,
+        "selected_recipes": {
+          "raw": 2
+        },
+        "codecs": {
+          "zlib": 2
+        },
+        "references_reused": 0,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\pcm_extremes.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 456,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.009817300000577234,
+          "total_seconds": 0.02672829999937676,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 4629,
+          "verified": true,
+          "files": [
+            {
+              "source": "signed_extremes_24.wav",
+              "source_bytes": 6212,
+              "source_sha256": "655575708306c43c22343ae1de6a338d6cc39642569cba733cfe2254ca517d62",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\pcm_extremes\\signed_extremes_24.wav",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.081858600009582,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\wavpack\\restored\\signed_extremes_24.wav"
+                ],
+                "returncode": 0,
+                "seconds": 0.07702330000756774,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 684
+            },
+            {
+              "source": "signed_extremes_32.wav",
+              "source_bytes": 8268,
+              "source_sha256": "615611aae523008e735d1ec52fa353559aacab1b708c6ff387866fcf586a356a",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\pcm_extremes\\signed_extremes_32.wav",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\wavpack\\001.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.08040639999671839,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\wavpack\\001.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\wavpack\\restored\\signed_extremes_32.wav"
+                ],
+                "returncode": 0,
+                "seconds": 0.0731208999932278,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 3332
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.32480269999359734,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 4016
+        },
+        "flac": {
+          "status": "complete",
+          "verified": true,
+          "archive_bytes": 20124,
+          "files": [
+            {
+              "source": "signed_extremes_24.wav",
+              "source_bytes": 6212,
+              "source_sha256": "655575708306c43c22343ae1de6a338d6cc39642569cba733cfe2254ca517d62",
+              "data_offset": 44,
+              "data_size": 6168,
+              "format": "s24le",
+              "rate": 192000,
+              "channels": 2,
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-f",
+                  "s24le",
+                  "-ar",
+                  "192000",
+                  "-ac",
+                  "2",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\flac\\000.pcm",
+                  "-c:a",
+                  "flac",
+                  "-strict",
+                  "experimental",
+                  "-compression_level",
+                  "8",
+                  "-sample_fmt",
+                  "s32",
+                  "-bits_per_raw_sample",
+                  "24",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\flac\\000.flac"
+                ],
+                "returncode": 0,
+                "seconds": 0.15702899999450892,
+                "stdout": "",
+                "stderr": ""
+              },
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\flac\\000.flac",
+                  "-c:a",
+                  "pcm_s24le",
+                  "-f",
+                  "s24le",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\flac\\000.decoded.pcm"
+                ],
+                "returncode": 0,
+                "seconds": 0.1508965000102762,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "audio_member": "000/audio.flac",
+              "wrapper_spans": [
+                {
+                  "offset": 0,
+                  "length": 44,
+                  "member": "000/wrapper-0.bin"
+                }
+              ],
+              "encoded_audio_bytes": 10119
+            },
+            {
+              "source": "signed_extremes_32.wav",
+              "source_bytes": 8268,
+              "source_sha256": "615611aae523008e735d1ec52fa353559aacab1b708c6ff387866fcf586a356a",
+              "data_offset": 44,
+              "data_size": 8224,
+              "format": "s32le",
+              "rate": 192000,
+              "channels": 2,
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-f",
+                  "s32le",
+                  "-ar",
+                  "192000",
+                  "-ac",
+                  "2",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\flac\\001.pcm",
+                  "-c:a",
+                  "flac",
+                  "-strict",
+                  "experimental",
+                  "-compression_level",
+                  "8",
+                  "-sample_fmt",
+                  "s32",
+                  "-bits_per_raw_sample",
+                  "32",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\flac\\001.flac"
+                ],
+                "returncode": 0,
+                "seconds": 0.16259379999246448,
+                "stdout": "",
+                "stderr": ""
+              },
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+                  "-hide_banner",
+                  "-loglevel",
+                  "error",
+                  "-i",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\flac\\001.flac",
+                  "-c:a",
+                  "pcm_s32le",
+                  "-f",
+                  "s32le",
+                  "-y",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\flac\\001.decoded.pcm"
+                ],
+                "returncode": 0,
+                "seconds": 0.19968999999400694,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "audio_member": "001/audio.flac",
+              "wrapper_spans": [
+                {
+                  "offset": 0,
+                  "length": 44,
+                  "member": "001/wrapper-0.bin"
+                }
+              ],
+              "encoded_audio_bytes": 9027
+            }
+          ],
+          "codec": "FFmpeg FLAC level 8, -strict experimental for exact 32-bit support + exact source wrapper spans in ZIP",
+          "total_seconds": 0.699140400000033,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\pcm_extremes\\flac\\flac_with_exact_wrappers.zip"
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": -48696,
+        "saving_vs_wavpack_bytes": -44523,
+        "saving_vs_flac_bytes": -29028
+      },
+      "pack_seconds": 1.8908754000003682,
+      "verification_seconds": 0.07717029999184888,
+      "verification": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 14480,
+        "archive_bytes": 49152,
+        "strategy": "raw",
+        "objects": 2,
+        "pieces": 2
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 2,
+        "original_bytes": 14480,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\pcm_extremes"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "skipped_no_net_savings",
+      "archive_path": null
+    },
+    {
+      "name": "opaque_float",
+      "original_bytes": 1834,
+      "files": [
+        {
+          "name": "float32_exact_special_bits.wav",
+          "bytes": 1834,
+          "sha256": "9c01ec23e0d22ca90ee931658bb043a27ff6f740f5bd1ba55db6637aaff268e4",
+          "layout": null
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 1,
+        "original_bytes": 1834,
+        "archive_bytes": 49152,
+        "strategy": "raw",
+        "objects": 1,
+        "pieces": 1,
+        "candidate_bytes": {
+          "raw": 49152,
+          "native": 49152,
+          "semantic": 49152,
+          "hybrid": 49152
+        },
+        "net_saving_bytes": -47318,
+        "net_saving_percent": -2580.044,
+        "selected_recipes": {
+          "raw": 1
+        },
+        "codecs": {
+          "zlib": 1
+        },
+        "references_reused": 0,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\opaque_float.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 263,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\opaque_float\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.007655299996258691,
+          "total_seconds": 0.01566649999585934,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 1641,
+          "verified": true,
+          "files": [
+            {
+              "source": "float32_exact_special_bits.wav",
+              "source_bytes": 1834,
+              "source_sha256": "9c01ec23e0d22ca90ee931658bb043a27ff6f740f5bd1ba55db6637aaff268e4",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\opaque_float\\float32_exact_special_bits.wav",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\opaque_float\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.08292889999574982,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\opaque_float\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\opaque_float\\wavpack\\restored\\float32_exact_special_bits.wav"
+                ],
+                "returncode": 0,
+                "seconds": 0.07553509999706876,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 1196
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.16269430000102147,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\opaque_float\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 1196
+        },
+        "flac": {
+          "status": "not_applicable",
+          "archive_bytes": null,
+          "verified": false,
+          "reason": "This reference requires a group of recognized integer PCM files",
+          "files": []
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": -48889,
+        "saving_vs_wavpack_bytes": -47511,
+        "saving_vs_flac_bytes": null
+      },
+      "pack_seconds": 0.5337579999904847,
+      "verification_seconds": 0.05405510000127833,
+      "verification": {
+        "verified": true,
+        "files": 1,
+        "original_bytes": 1834,
+        "archive_bytes": 49152,
+        "strategy": "raw",
+        "objects": 1,
+        "pieces": 1
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 1,
+        "original_bytes": 1834,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\opaque_float"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "skipped_no_net_savings",
+      "archive_path": null
+    },
+    {
+      "name": "dsd64_container_versions",
+      "original_bytes": 6291826,
+      "files": [
+        {
+          "name": "reference_lsb.dsf",
+          "bytes": 2097244,
+          "sha256": "1a07b308ace5eb2a5f6695410b3cd23a8f6b48fdedf3007c7924644d8ce17092",
+          "layout": {
+            "container": "dsf",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 2822400,
+            "frames": 8388608,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 92,
+            "data_size": 2097152,
+            "block_size": 4096,
+            "bit_order": "lsb"
+          }
+        },
+        {
+          "name": "same_stream_msb.dsf",
+          "bytes": 2097244,
+          "sha256": "0120f45b9ae4408f1418eb54747dd428ea068b9e012363c628eabd1a6eb60199",
+          "layout": {
+            "container": "dsf",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 2822400,
+            "frames": 8388608,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 92,
+            "data_size": 2097152,
+            "block_size": 4096,
+            "bit_order": "msb"
+          }
+        },
+        {
+          "name": "same_stream_interleaved.dff",
+          "bytes": 2097338,
+          "sha256": "9ba7f81cc45d7995a65818fb7c83437fb13627e516659ae53ea1a70cd404e14b",
+          "layout": {
+            "container": "dff",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 2822400,
+            "frames": 8388608,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 148,
+            "data_size": 2097152,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 3,
+        "original_bytes": 6291826,
+        "archive_bytes": 2248704,
+        "strategy": "native",
+        "objects": 98,
+        "pieces": 286,
+        "candidate_bytes": {
+          "raw": 6635520,
+          "native": 2248704,
+          "semantic": 2260992,
+          "hybrid": 6635520
+        },
+        "net_saving_bytes": 4043122,
+        "net_saving_percent": 64.26,
+        "selected_recipes": {
+          "native": 3
+        },
+        "codecs": {
+          "raw": 94,
+          "zlib": 4
+        },
+        "references_reused": 188,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\dsd64_container_versions.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 6294111,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_container_versions\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.16865019999386277,
+          "total_seconds": 0.2459612999955425,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 6299743,
+          "verified": true,
+          "files": [
+            {
+              "source": "reference_lsb.dsf",
+              "source_bytes": 2097244,
+              "source_sha256": "1a07b308ace5eb2a5f6695410b3cd23a8f6b48fdedf3007c7924644d8ce17092",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd64_container_versions\\reference_lsb.dsf",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_container_versions\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.27295369999774266,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_container_versions\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_container_versions\\wavpack\\restored\\reference_lsb.dsf"
+                ],
+                "returncode": 0,
+                "seconds": 0.09891519999655429,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 2099618
+            },
+            {
+              "source": "same_stream_interleaved.dff",
+              "source_bytes": 2097338,
+              "source_sha256": "9ba7f81cc45d7995a65818fb7c83437fb13627e516659ae53ea1a70cd404e14b",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd64_container_versions\\same_stream_interleaved.dff",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_container_versions\\wavpack\\001.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.26181999999971595,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_container_versions\\wavpack\\001.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_container_versions\\wavpack\\restored\\same_stream_interleaved.dff"
+                ],
+                "returncode": 0,
+                "seconds": 0.09534200000052806,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 2099714
+            },
+            {
+              "source": "same_stream_msb.dsf",
+              "source_bytes": 2097244,
+              "source_sha256": "0120f45b9ae4408f1418eb54747dd428ea068b9e012363c628eabd1a6eb60199",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd64_container_versions\\same_stream_msb.dsf",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_container_versions\\wavpack\\002.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.2635130999988178,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_container_versions\\wavpack\\002.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_container_versions\\wavpack\\restored\\same_stream_msb.dsf"
+                ],
+                "returncode": 0,
+                "seconds": 0.10129179999057669,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 2099618
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 1.1275628000003053,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_container_versions\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 6298950
+        },
+        "flac": {
+          "status": "not_applicable",
+          "archive_bytes": null,
+          "verified": false,
+          "reason": "This reference requires a group of recognized integer PCM files",
+          "files": []
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": 4045407,
+        "saving_vs_wavpack_bytes": 4051039,
+        "saving_vs_flac_bytes": null
+      },
+      "pack_seconds": 19.68883850000566,
+      "verification_seconds": 0.3660600000002887,
+      "verification": {
+        "verified": true,
+        "files": 3,
+        "original_bytes": 6291826,
+        "archive_bytes": 2248704,
+        "strategy": "native",
+        "objects": 98,
+        "pieces": 286
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 3,
+        "original_bytes": 6291826,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\dsd64_container_versions"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "created",
+      "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\archives\\dsd64_container_versions.mv"
+    },
+    {
+      "name": "dsd64_complement_versions",
+      "original_bytes": 4194526,
+      "files": [
+        {
+          "name": "original_before_complement.dsf",
+          "bytes": 2097244,
+          "sha256": "1a07b308ace5eb2a5f6695410b3cd23a8f6b48fdedf3007c7924644d8ce17092",
+          "layout": {
+            "container": "dsf",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 2822400,
+            "frames": 8388608,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 92,
+            "data_size": 2097152,
+            "block_size": 4096,
+            "bit_order": "lsb"
+          }
+        },
+        {
+          "name": "complement_and_swap.dff",
+          "bytes": 2097282,
+          "sha256": "3f6d49301e278d2d0e4ad1e24b5c955aa14d8cc2770b385b065dc88101559994",
+          "layout": {
+            "container": "dff",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 2822400,
+            "frames": 8388608,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 130,
+            "data_size": 2097152,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 4194526,
+        "archive_bytes": 2256896,
+        "strategy": "semantic",
+        "objects": 91,
+        "pieces": 180,
+        "candidate_bytes": {
+          "raw": 4440064,
+          "native": 4435968,
+          "semantic": 2256896,
+          "hybrid": 4440064
+        },
+        "net_saving_bytes": 1937630,
+        "net_saving_percent": 46.194,
+        "selected_recipes": {
+          "semantic": 2
+        },
+        "codecs": {
+          "raw": 89,
+          "zlib": 2
+        },
+        "references_reused": 89,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\dsd64_complement_versions.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 4196079,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_complement_versions\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.12761129999125842,
+          "total_seconds": 0.19111529999645427,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 4199914,
+          "verified": true,
+          "files": [
+            {
+              "source": "complement_and_swap.dff",
+              "source_bytes": 2097282,
+              "source_sha256": "3f6d49301e278d2d0e4ad1e24b5c955aa14d8cc2770b385b065dc88101559994",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd64_complement_versions\\complement_and_swap.dff",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_complement_versions\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.2718826999916928,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_complement_versions\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_complement_versions\\wavpack\\restored\\complement_and_swap.dff"
+                ],
+                "returncode": 0,
+                "seconds": 0.10875690000830218,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 2099656
+            },
+            {
+              "source": "original_before_complement.dsf",
+              "source_bytes": 2097244,
+              "source_sha256": "1a07b308ace5eb2a5f6695410b3cd23a8f6b48fdedf3007c7924644d8ce17092",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd64_complement_versions\\original_before_complement.dsf",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_complement_versions\\wavpack\\001.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.26983010000549257,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_complement_versions\\wavpack\\001.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_complement_versions\\wavpack\\restored\\original_before_complement.dsf"
+                ],
+                "returncode": 0,
+                "seconds": 0.10102200000255834,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 2099618
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.7739882000023499,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd64_complement_versions\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 4199274
+        },
+        "flac": {
+          "status": "not_applicable",
+          "archive_bytes": null,
+          "verified": false,
+          "reason": "This reference requires a group of recognized integer PCM files",
+          "files": []
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": 1939183,
+        "saving_vs_wavpack_bytes": 1943018,
+        "saving_vs_flac_bytes": null
+      },
+      "pack_seconds": 26.40670140000293,
+      "verification_seconds": 1.0203337999992073,
+      "verification": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 4194526,
+        "archive_bytes": 2256896,
+        "strategy": "semantic",
+        "objects": 91,
+        "pieces": 180
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 2,
+        "original_bytes": 4194526,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\dsd64_complement_versions"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "created",
+      "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\archives\\dsd64_complement_versions.mv"
+    },
+    {
+      "name": "dsd_byte_edit",
+      "original_bytes": 6291876,
+      "files": [
+        {
+          "name": "original_before_byte_edit.dsf",
+          "bytes": 2097244,
+          "sha256": "1a07b308ace5eb2a5f6695410b3cd23a8f6b48fdedf3007c7924644d8ce17092",
+          "layout": {
+            "container": "dsf",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 2822400,
+            "frames": 8388608,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 92,
+            "data_size": 2097152,
+            "block_size": 4096,
+            "bit_order": "lsb"
+          }
+        },
+        {
+          "name": "insert_17_bytes_per_channel.dff",
+          "bytes": 2097316,
+          "sha256": "c8e778215ada6d03143282e6a3e1ad31503360b0e8b381eb528046f9cdcc4e9d",
+          "layout": {
+            "container": "dff",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 2822400,
+            "frames": 8388744,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 130,
+            "data_size": 2097186,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        },
+        {
+          "name": "insert_17_bytes_complement_and_swap.dff",
+          "bytes": 2097316,
+          "sha256": "2422b668558dc78507b2789b05c55dfc2298d33a8740ebd6d01e76bfe34475ee",
+          "layout": {
+            "container": "dff",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 2822400,
+            "frames": 8388744,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 130,
+            "data_size": 2097186,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 3,
+        "original_bytes": 6291876,
+        "archive_bytes": 2330624,
+        "strategy": "semantic",
+        "objects": 93,
+        "pieces": 270,
+        "candidate_bytes": {
+          "raw": 6627328,
+          "native": 4505600,
+          "semantic": 2330624,
+          "hybrid": 6627328
+        },
+        "net_saving_bytes": 3961252,
+        "net_saving_percent": 62.958,
+        "selected_recipes": {
+          "semantic": 3
+        },
+        "codecs": {
+          "raw": 91,
+          "zlib": 2
+        },
+        "references_reused": 177,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\dsd_byte_edit.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 6294237,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_byte_edit\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.15882959999726154,
+          "total_seconds": 0.21744439999747556,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 6299880,
+          "verified": true,
+          "files": [
+            {
+              "source": "insert_17_bytes_complement_and_swap.dff",
+              "source_bytes": 2097316,
+              "source_sha256": "2422b668558dc78507b2789b05c55dfc2298d33a8740ebd6d01e76bfe34475ee",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd_byte_edit\\insert_17_bytes_complement_and_swap.dff",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_byte_edit\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.26937619999807794,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_byte_edit\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_byte_edit\\wavpack\\restored\\insert_17_bytes_complement_and_swap.dff"
+                ],
+                "returncode": 0,
+                "seconds": 0.09554929999285378,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 2099690
+            },
+            {
+              "source": "insert_17_bytes_per_channel.dff",
+              "source_bytes": 2097316,
+              "source_sha256": "c8e778215ada6d03143282e6a3e1ad31503360b0e8b381eb528046f9cdcc4e9d",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd_byte_edit\\insert_17_bytes_per_channel.dff",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_byte_edit\\wavpack\\001.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.26183260000834707,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_byte_edit\\wavpack\\001.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_byte_edit\\wavpack\\restored\\insert_17_bytes_per_channel.dff"
+                ],
+                "returncode": 0,
+                "seconds": 0.09534590000112075,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 2099690
+            },
+            {
+              "source": "original_before_byte_edit.dsf",
+              "source_bytes": 2097244,
+              "source_sha256": "1a07b308ace5eb2a5f6695410b3cd23a8f6b48fdedf3007c7924644d8ce17092",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd_byte_edit\\original_before_byte_edit.dsf",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_byte_edit\\wavpack\\002.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.261338699987391,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_byte_edit\\wavpack\\002.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_byte_edit\\wavpack\\restored\\original_before_byte_edit.dsf"
+                ],
+                "returncode": 0,
+                "seconds": 0.09803649999957997,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 2099618
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 1.1139769000001252,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_byte_edit\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 6298998
+        },
+        "flac": {
+          "status": "not_applicable",
+          "archive_bytes": null,
+          "verified": false,
+          "reason": "This reference requires a group of recognized integer PCM files",
+          "files": []
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": 3963613,
+        "saving_vs_wavpack_bytes": 3969256,
+        "saving_vs_flac_bytes": null
+      },
+      "pack_seconds": 29.481282799999462,
+      "verification_seconds": 1.4445919999998296,
+      "verification": {
+        "verified": true,
+        "files": 3,
+        "original_bytes": 6291876,
+        "archive_bytes": 2330624,
+        "strategy": "semantic",
+        "objects": 93,
+        "pieces": 270
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 3,
+        "original_bytes": 6291876,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\dsd_byte_edit"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "created",
+      "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\archives\\dsd_byte_edit.mv"
+    },
+    {
+      "name": "dsd_bit_shift",
+      "original_bytes": 4194526,
+      "files": [
+        {
+          "name": "original_before_bit_shift.dsf",
+          "bytes": 2097244,
+          "sha256": "1a07b308ace5eb2a5f6695410b3cd23a8f6b48fdedf3007c7924644d8ce17092",
+          "layout": {
+            "container": "dsf",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 2822400,
+            "frames": 8388608,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 92,
+            "data_size": 2097152,
+            "block_size": 4096,
+            "bit_order": "lsb"
+          }
+        },
+        {
+          "name": "one_bit_shift.dff",
+          "bytes": 2097282,
+          "sha256": "ca6176885a241c421eb33536c01421950aea6bebd9f25f35d45734602bfd0d9b",
+          "layout": {
+            "container": "dff",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 2822400,
+            "frames": 8388608,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 130,
+            "data_size": 2097152,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 4194526,
+        "archive_bytes": 4427776,
+        "strategy": "native",
+        "objects": 188,
+        "pieces": 188,
+        "candidate_bytes": {
+          "raw": 4440064,
+          "native": 4427776,
+          "semantic": 4435968,
+          "hybrid": 4440064
+        },
+        "net_saving_bytes": -233250,
+        "net_saving_percent": -5.561,
+        "selected_recipes": {
+          "native": 2
+        },
+        "codecs": {
+          "raw": 186,
+          "zlib": 2
+        },
+        "references_reused": 0,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\dsd_bit_shift.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 4196065,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_bit_shift\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.10799049999332055,
+          "total_seconds": 0.14902080000319984,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 4199896,
+          "verified": true,
+          "files": [
+            {
+              "source": "one_bit_shift.dff",
+              "source_bytes": 2097282,
+              "source_sha256": "ca6176885a241c421eb33536c01421950aea6bebd9f25f35d45734602bfd0d9b",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd_bit_shift\\one_bit_shift.dff",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_bit_shift\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.26230970000324305,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_bit_shift\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_bit_shift\\wavpack\\restored\\one_bit_shift.dff"
+                ],
+                "returncode": 0,
+                "seconds": 0.10885910000069998,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 2099656
+            },
+            {
+              "source": "original_before_bit_shift.dsf",
+              "source_bytes": 2097244,
+              "source_sha256": "1a07b308ace5eb2a5f6695410b3cd23a8f6b48fdedf3007c7924644d8ce17092",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd_bit_shift\\original_before_bit_shift.dsf",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_bit_shift\\wavpack\\001.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.2841790999955265,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_bit_shift\\wavpack\\001.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_bit_shift\\wavpack\\restored\\original_before_bit_shift.dsf"
+                ],
+                "returncode": 0,
+                "seconds": 0.09841590000723954,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 2099618
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.7778799999941839,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_bit_shift\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 4199274
+        },
+        "flac": {
+          "status": "not_applicable",
+          "archive_bytes": null,
+          "verified": false,
+          "reason": "This reference requires a group of recognized integer PCM files",
+          "files": []
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": -231711,
+        "saving_vs_wavpack_bytes": -227880,
+        "saving_vs_flac_bytes": null
+      },
+      "pack_seconds": 26.598496999999043,
+      "verification_seconds": 0.25215190000017174,
+      "verification": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 4194526,
+        "archive_bytes": 4427776,
+        "strategy": "native",
+        "objects": 188,
+        "pieces": 188
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 2,
+        "original_bytes": 4194526,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\dsd_bit_shift"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "skipped_no_net_savings",
+      "archive_path": null
+    },
+    {
+      "name": "dsd128_synth",
+      "original_bytes": 262366,
+      "files": [
+        {
+          "name": "toy_sigma_delta_dsd128.dsf",
+          "bytes": 131164,
+          "sha256": "61da037aeeb8aef21e7abea7bd184076a9ec262a549e5152ae406cce4f713efa",
+          "layout": {
+            "container": "dsf",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 5644800,
+            "frames": 524288,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 92,
+            "data_size": 131072,
+            "block_size": 4096,
+            "bit_order": "lsb"
+          }
+        },
+        {
+          "name": "same_stream_dsd128.dff",
+          "bytes": 131202,
+          "sha256": "03b96e34174c62432d6493f73b0aeb643c02cf0f4bc1c54761bdde14c9a0c785",
+          "layout": {
+            "container": "dff",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 5644800,
+            "frames": 524288,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 130,
+            "data_size": 131072,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 262366,
+        "archive_bytes": 69632,
+        "strategy": "semantic",
+        "objects": 4,
+        "pieces": 6,
+        "candidate_bytes": {
+          "raw": 147456,
+          "native": 77824,
+          "semantic": 69632,
+          "hybrid": 69632
+        },
+        "net_saving_bytes": 192734,
+        "net_saving_percent": 73.46,
+        "selected_recipes": {
+          "semantic": 2
+        },
+        "codecs": {
+          "lzma": 2,
+          "zlib": 2
+        },
+        "references_reused": 2,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\dsd128_synth.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 84092,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd128_synth\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.03783909999765456,
+          "total_seconds": 0.06709559999580961,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 92731,
+          "verified": true,
+          "files": [
+            {
+              "source": "same_stream_dsd128.dff",
+              "source_bytes": 131202,
+              "source_sha256": "03b96e34174c62432d6493f73b0aeb643c02cf0f4bc1c54761bdde14c9a0c785",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd128_synth\\same_stream_dsd128.dff",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd128_synth\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.09436099999584258,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd128_synth\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd128_synth\\wavpack\\restored\\same_stream_dsd128.dff"
+                ],
+                "returncode": 0,
+                "seconds": 0.10662609999417327,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 46068
+            },
+            {
+              "source": "toy_sigma_delta_dsd128.dsf",
+              "source_bytes": 131164,
+              "source_sha256": "61da037aeeb8aef21e7abea7bd184076a9ec262a549e5152ae406cce4f713efa",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd128_synth\\toy_sigma_delta_dsd128.dsf",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd128_synth\\wavpack\\001.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.11487850001140032,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd128_synth\\wavpack\\001.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd128_synth\\wavpack\\restored\\toy_sigma_delta_dsd128.dsf"
+                ],
+                "returncode": 0,
+                "seconds": 0.0761151000042446,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 46030
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.40968929999507964,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd128_synth\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 92098
+        },
+        "flac": {
+          "status": "not_applicable",
+          "archive_bytes": null,
+          "verified": false,
+          "reason": "This reference requires a group of recognized integer PCM files",
+          "files": []
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": 14460,
+        "saving_vs_wavpack_bytes": 23099,
+        "saving_vs_flac_bytes": null
+      },
+      "pack_seconds": 1.4219337999966228,
+      "verification_seconds": 0.14019910000206437,
+      "verification": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 262366,
+        "archive_bytes": 69632,
+        "strategy": "semantic",
+        "objects": 4,
+        "pieces": 6
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 2,
+        "original_bytes": 262366,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\dsd128_synth"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "created",
+      "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\archives\\dsd128_synth.mv"
+    },
+    {
+      "name": "dsd256_synth",
+      "original_bytes": 262366,
+      "files": [
+        {
+          "name": "toy_sigma_delta_dsd256.dsf",
+          "bytes": 131164,
+          "sha256": "dbfc743c7905aa371bf816ddec87988184d9bfaeb1fd658981b9b3884787b104",
+          "layout": {
+            "container": "dsf",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 11289600,
+            "frames": 524288,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 92,
+            "data_size": 131072,
+            "block_size": 4096,
+            "bit_order": "lsb"
+          }
+        },
+        {
+          "name": "same_stream_dsd256.dff",
+          "bytes": 131202,
+          "sha256": "1604aef1fbb12d817abaeb408791fd1da72572afbbbf590302718944f909577b",
+          "layout": {
+            "container": "dff",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 11289600,
+            "frames": 524288,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 130,
+            "data_size": 131072,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 262366,
+        "archive_bytes": 77824,
+        "strategy": "semantic",
+        "objects": 6,
+        "pieces": 10,
+        "candidate_bytes": {
+          "raw": 143360,
+          "native": 90112,
+          "semantic": 77824,
+          "hybrid": 77824
+        },
+        "net_saving_bytes": 184542,
+        "net_saving_percent": 70.338,
+        "selected_recipes": {
+          "semantic": 2
+        },
+        "codecs": {
+          "lzma": 2,
+          "zlib": 4
+        },
+        "references_reused": 4,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\dsd256_synth.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 79999,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd256_synth\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.03670860000420362,
+          "total_seconds": 0.06676670000888407,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 92397,
+          "verified": true,
+          "files": [
+            {
+              "source": "same_stream_dsd256.dff",
+              "source_bytes": 131202,
+              "source_sha256": "1604aef1fbb12d817abaeb408791fd1da72572afbbbf590302718944f909577b",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd256_synth\\same_stream_dsd256.dff",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd256_synth\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.09290170000167564,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd256_synth\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd256_synth\\wavpack\\restored\\same_stream_dsd256.dff"
+                ],
+                "returncode": 0,
+                "seconds": 0.07880040000600275,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 45900
+            },
+            {
+              "source": "toy_sigma_delta_dsd256.dsf",
+              "source_bytes": 131164,
+              "source_sha256": "dbfc743c7905aa371bf816ddec87988184d9bfaeb1fd658981b9b3884787b104",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd256_synth\\toy_sigma_delta_dsd256.dsf",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd256_synth\\wavpack\\001.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.0969479999912437,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd256_synth\\wavpack\\001.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd256_synth\\wavpack\\restored\\toy_sigma_delta_dsd256.dsf"
+                ],
+                "returncode": 0,
+                "seconds": 0.07771610000054352,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 45862
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.3613123999966774,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd256_synth\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 91762
+        },
+        "flac": {
+          "status": "not_applicable",
+          "archive_bytes": null,
+          "verified": false,
+          "reason": "This reference requires a group of recognized integer PCM files",
+          "files": []
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": 2175,
+        "saving_vs_wavpack_bytes": 14573,
+        "saving_vs_flac_bytes": null
+      },
+      "pack_seconds": 1.7780292999959784,
+      "verification_seconds": 0.1419941999920411,
+      "verification": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 262366,
+        "archive_bytes": 77824,
+        "strategy": "semantic",
+        "objects": 6,
+        "pieces": 10
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 2,
+        "original_bytes": 262366,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\dsd256_synth"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "created",
+      "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\archives\\dsd256_synth.mv"
+    },
+    {
+      "name": "dsd_tail_padding",
+      "original_bytes": 16588,
+      "files": [
+        {
+          "name": "35bits_lsb_nonzero_padding.dsf",
+          "bytes": 8294,
+          "sha256": "f4a08aacc3359b7e84123bcd59c56e57fbca5fe3dd4750229f8507d0df5b71f9",
+          "layout": {
+            "container": "dsf",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 2822400,
+            "frames": 35,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 92,
+            "data_size": 8192,
+            "block_size": 4096,
+            "bit_order": "lsb"
+          }
+        },
+        {
+          "name": "35bits_msb_nonzero_padding.dsf",
+          "bytes": 8294,
+          "sha256": "4791390b2ad2a4612da80cd9a28e96f18a76415e885710c5dc8a0bbc459b3fce",
+          "layout": {
+            "container": "dsf",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 2822400,
+            "frames": 35,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 92,
+            "data_size": 8192,
+            "block_size": 4096,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 16588,
+        "archive_bytes": 49152,
+        "strategy": "raw",
+        "objects": 2,
+        "pieces": 2,
+        "candidate_bytes": {
+          "raw": 49152,
+          "native": 49152,
+          "semantic": 49152,
+          "hybrid": 49152
+        },
+        "net_saving_bytes": -32564,
+        "net_saving_percent": -196.311,
+        "selected_recipes": {
+          "raw": 2
+        },
+        "codecs": {
+          "zlib": 2
+        },
+        "references_reused": 0,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\dsd_tail_padding.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 513,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_tail_padding\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.016508300002897158,
+          "total_seconds": 0.03953639999963343,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "not_fully_byte_exact",
+          "archive_bytes": null,
+          "verified": false,
+          "files": [
+            {
+              "source": "35bits_lsb_nonzero_padding.dsf",
+              "source_bytes": 8294,
+              "source_sha256": "f4a08aacc3359b7e84123bcd59c56e57fbca5fe3dd4750229f8507d0df5b71f9",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd_tail_padding\\35bits_lsb_nonzero_padding.dsf",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_tail_padding\\wavpack\\000.wv"
+                ],
+                "returncode": 1,
+                "seconds": 0.08178769999358337,
+                "stdout": "",
+                "stderr": "\rwarning: DSF file has partial-byte leftover samples!                                \r\n\rblocks not padded with NULLs, MD5 will not match!                                \r\n\roriginal md5: 94deea6befaf19b2e05f93a8bfa6b6b8                                \r\n\rverified md5: c36f5714a279b2f72c7aa69f0bf8f0b1                                \r\n\rMD5 signatures should match, but do not!                                \r\n"
+              },
+              "reference_mode": "whole_original_file",
+              "status": "encoder_rejected",
+              "verified": false
+            },
+            {
+              "source": "35bits_msb_nonzero_padding.dsf",
+              "source_bytes": 8294,
+              "source_sha256": "4791390b2ad2a4612da80cd9a28e96f18a76415e885710c5dc8a0bbc459b3fce",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd_tail_padding\\35bits_msb_nonzero_padding.dsf",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_tail_padding\\wavpack\\001.wv"
+                ],
+                "returncode": 1,
+                "seconds": 0.07959639999899082,
+                "stdout": "",
+                "stderr": "\rwarning: DSF file has partial-byte leftover samples!                                \r\n\rblocks not padded with NULLs, MD5 will not match!                                \r\n\roriginal md5: 553511340797a44c46e2ac5d7c6a896c                                \r\n\rverified md5: 0e1187f99cc8c5ef6889e82c1193149b                                \r\n\rMD5 signatures should match, but do not!                                \r\n"
+              },
+              "reference_mode": "whole_original_file",
+              "status": "encoder_rejected",
+              "verified": false
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.16517779999412596
+        },
+        "flac": {
+          "status": "not_applicable",
+          "archive_bytes": null,
+          "verified": false,
+          "reason": "This reference requires a group of recognized integer PCM files",
+          "files": []
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": -48639,
+        "saving_vs_wavpack_bytes": null,
+        "saving_vs_flac_bytes": null
+      },
+      "pack_seconds": 0.9553290000039851,
+      "verification_seconds": 0.08915480000723619,
+      "verification": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 16588,
+        "archive_bytes": 49152,
+        "strategy": "raw",
+        "objects": 2,
+        "pieces": 2
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 2,
+        "original_bytes": 16588,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\dsd_tail_padding"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "skipped_no_net_savings",
+      "archive_path": null
+    },
+    {
+      "name": "dsd_noise",
+      "original_bytes": 524418,
+      "files": [
+        {
+          "name": "unrelated_uniform_dsd256.dff",
+          "bytes": 524418,
+          "sha256": "6ac8d3152dab5042578954f62927e6bb37df47f93de576bac8c8ed8cde841f90",
+          "layout": {
+            "container": "dff",
+            "kind": "dsd",
+            "channels": 2,
+            "rate": 11289600,
+            "frames": 2097152,
+            "width": 1,
+            "valid_bits": 1,
+            "data_offset": 130,
+            "data_size": 524288,
+            "block_size": 0,
+            "bit_order": "msb"
+          }
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 1,
+        "original_bytes": 524418,
+        "archive_bytes": 589824,
+        "strategy": "semantic",
+        "objects": 21,
+        "pieces": 21,
+        "candidate_bytes": {
+          "raw": 602112,
+          "native": 598016,
+          "semantic": 589824,
+          "hybrid": 589824
+        },
+        "net_saving_bytes": -65406,
+        "net_saving_percent": -12.472,
+        "selected_recipes": {
+          "semantic": 1
+        },
+        "codecs": {
+          "raw": 20,
+          "zlib": 1
+        },
+        "references_reused": 0,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\dsd_noise.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 524732,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_noise\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.020370600002934225,
+          "total_seconds": 0.03992150000703987,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "complete",
+          "archive_bytes": 525505,
+          "verified": true,
+          "files": [
+            {
+              "source": "unrelated_uniform_dsd256.dff",
+              "source_bytes": 524418,
+              "source_sha256": "6ac8d3152dab5042578954f62927e6bb37df47f93de576bac8c8ed8cde841f90",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\dsd_noise\\unrelated_uniform_dsd256.dff",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_noise\\wavpack\\000.wv"
+                ],
+                "returncode": 0,
+                "seconds": 0.1297192000056384,
+                "stdout": "",
+                "stderr": ""
+              },
+              "reference_mode": "whole_original_file",
+              "decode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+                  "-q",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_noise\\wavpack\\000.wv",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_noise\\wavpack\\restored\\unrelated_uniform_dsd256.dff"
+                ],
+                "returncode": 0,
+                "seconds": 0.08257210000010673,
+                "stdout": "",
+                "stderr": ""
+              },
+              "status": "complete",
+              "verified": true,
+              "encoded_bytes": 525064
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.22026210000331048,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\dsd_noise\\wavpack\\whole_file_wavpack.zip",
+          "encoded_stream_bytes": 525064
+        },
+        "flac": {
+          "status": "not_applicable",
+          "archive_bytes": null,
+          "verified": false,
+          "reason": "This reference requires a group of recognized integer PCM files",
+          "files": []
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": -65092,
+        "saving_vs_wavpack_bytes": -64319,
+        "saving_vs_flac_bytes": null
+      },
+      "pack_seconds": 4.099594499988598,
+      "verification_seconds": 0.1665833000006387,
+      "verification": {
+        "verified": true,
+        "files": 1,
+        "original_bytes": 524418,
+        "archive_bytes": 589824,
+        "strategy": "semantic",
+        "objects": 21,
+        "pieces": 21
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 1,
+        "original_bytes": 524418,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\dsd_noise"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "skipped_no_net_savings",
+      "archive_path": null
+    },
+    {
+      "name": "opaque_dst",
+      "original_bytes": 184,
+      "files": [
+        {
+          "name": "unsupported_synthetic_dst_not_recording.dff",
+          "bytes": 184,
+          "sha256": "3e2eb0b873e74dd035ed50f5f8fe5e5477edc2793ff4751278729c1ead024208",
+          "layout": null
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 1,
+        "original_bytes": 184,
+        "archive_bytes": 49152,
+        "strategy": "raw",
+        "objects": 1,
+        "pieces": 1,
+        "candidate_bytes": {
+          "raw": 49152,
+          "native": 49152,
+          "semantic": 49152,
+          "hybrid": 49152
+        },
+        "net_saving_bytes": -48968,
+        "net_saving_percent": -26613.043,
+        "selected_recipes": {
+          "raw": 1
+        },
+        "codecs": {
+          "zlib": 1
+        },
+        "references_reused": 0,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\opaque_dst.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 313,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\opaque_dst\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.003209299989975989,
+          "total_seconds": 0.010201899989624508,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "not_fully_byte_exact",
+          "archive_bytes": null,
+          "verified": false,
+          "files": [
+            {
+              "source": "unsupported_synthetic_dst_not_recording.dff",
+              "source_bytes": 184,
+              "source_sha256": "3e2eb0b873e74dd035ed50f5f8fe5e5477edc2793ff4751278729c1ead024208",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\opaque_dst\\unsupported_synthetic_dst_not_recording.dff",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\opaque_dst\\wavpack\\000.wv"
+                ],
+                "returncode": 1,
+                "seconds": 0.07268899999326095,
+                "stdout": "",
+                "stderr": "\rDSDIFF files must be uncompressed, not \"DST \"!                                \r\n"
+              },
+              "reference_mode": "whole_original_file",
+              "status": "encoder_rejected",
+              "verified": false
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.0744488999916939
+        },
+        "flac": {
+          "status": "not_applicable",
+          "archive_bytes": null,
+          "verified": false,
+          "reason": "This reference requires a group of recognized integer PCM files",
+          "files": []
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": -48839,
+        "saving_vs_wavpack_bytes": null,
+        "saving_vs_flac_bytes": null
+      },
+      "pack_seconds": 0.5451153999892995,
+      "verification_seconds": 0.05379489999904763,
+      "verification": {
+        "verified": true,
+        "files": 1,
+        "original_bytes": 184,
+        "archive_bytes": 49152,
+        "strategy": "raw",
+        "objects": 1,
+        "pieces": 1
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 1,
+        "original_bytes": 184,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\opaque_dst"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "skipped_no_net_savings",
+      "archive_path": null
+    },
+    {
+      "name": "malformed",
+      "original_bytes": 8414,
+      "files": [
+        {
+          "name": "truncated_dsf.dsf",
+          "bytes": 8277,
+          "sha256": "75fbef3e990a0c7423031f75a0333bd28b28befca15d740b3e3d24e441513e11",
+          "layout": null
+        },
+        {
+          "name": "truncated_dff.dff",
+          "bytes": 137,
+          "sha256": "bdbd1a74c5c482461935d4ca34400f4d6132ed6d35be0aaeda93127ea926b2e7",
+          "layout": null
+        }
+      ],
+      "mastervault": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 8414,
+        "archive_bytes": 49152,
+        "strategy": "raw",
+        "objects": 2,
+        "pieces": 2,
+        "candidate_bytes": {
+          "raw": 49152,
+          "native": 49152,
+          "semantic": 49152,
+          "hybrid": 49152
+        },
+        "net_saving_bytes": -40738,
+        "net_saving_percent": -484.169,
+        "selected_recipes": {
+          "raw": 2
+        },
+        "codecs": {
+          "zlib": 2
+        },
+        "references_reused": 0,
+        "codec_tools": {
+          "ffmpeg": "C:\\Users\\diwen_yu\\AppData\\Local\\Microsoft\\WinGet\\Links\\ffmpeg.EXE",
+          "wavpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+          "wvunpack": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wvunpack.exe",
+          "external_encoding_enabled": true
+        },
+        "rejected_external_candidates": 0,
+        "streaming": true,
+        "average": 16384,
+        "status": "created",
+        "archive": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\measured\\malformed.mv"
+      },
+      "references": {
+        "zip": {
+          "status": "complete",
+          "archive_bytes": 440,
+          "archive_path": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\malformed\\zip\\originals.zip",
+          "verified": true,
+          "encode_seconds": 0.0113089999940712,
+          "total_seconds": 0.031433199997991323,
+          "codec": "ZIP_DEFLATED level 9"
+        },
+        "wavpack": {
+          "status": "not_fully_byte_exact",
+          "archive_bytes": null,
+          "verified": false,
+          "files": [
+            {
+              "source": "truncated_dff.dff",
+              "source_bytes": 137,
+              "source_sha256": "bdbd1a74c5c482461935d4ca34400f4d6132ed6d35be0aaeda93127ea926b2e7",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\malformed\\truncated_dff.dff",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\malformed\\wavpack\\000.wv"
+                ],
+                "returncode": 1,
+                "seconds": 0.0763580000057118,
+                "stdout": "",
+                "stderr": "\rC:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\malformed\\truncated_dff.dff is not a valid .DFF file (by total size)!                                \r\n"
+              },
+              "reference_mode": "whole_original_file",
+              "status": "encoder_rejected",
+              "verified": false
+            },
+            {
+              "source": "truncated_dsf.dsf",
+              "source_bytes": 8277,
+              "source_sha256": "75fbef3e990a0c7423031f75a0333bd28b28befca15d740b3e3d24e441513e11",
+              "encode": {
+                "command": [
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\tools\\wavpack.exe",
+                  "-q",
+                  "-hh",
+                  "-m",
+                  "-v",
+                  "--no-threads",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\malformed\\truncated_dsf.dsf",
+                  "-o",
+                  "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\references\\malformed\\wavpack\\001.wv"
+                ],
+                "returncode": 1,
+                "seconds": 0.07485830000950955,
+                "stdout": "",
+                "stderr": "\rC:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\corpus\\malformed\\truncated_dsf.dsf is not a valid .DSF file (by total size)!                                \r\n"
+              },
+              "reference_mode": "whole_original_file",
+              "status": "encoder_rejected",
+              "verified": false
+            }
+          ],
+          "codec": "whole-file WavPack, -hh -m -v --no-threads; actual executable/version recorded separately",
+          "total_seconds": 0.154947799994261
+        },
+        "flac": {
+          "status": "not_applicable",
+          "archive_bytes": null,
+          "verified": false,
+          "reason": "This reference requires a group of recognized integer PCM files",
+          "files": []
+        }
+      },
+      "comparisons": {
+        "saving_vs_zip_bytes": -48712,
+        "saving_vs_wavpack_bytes": null,
+        "saving_vs_flac_bytes": null
+      },
+      "pack_seconds": 0.5728181999875233,
+      "verification_seconds": 0.0828305999893928,
+      "verification": {
+        "verified": true,
+        "files": 2,
+        "original_bytes": 8414,
+        "archive_bytes": 49152,
+        "strategy": "raw",
+        "objects": 2,
+        "pieces": 2
+      },
+      "unpack": {
+        "verified": true,
+        "restored_files": 2,
+        "original_bytes": 8414,
+        "output": "C:\\Users\\diwen_yu\\Documents\\Codex\\2026-09-26\\wo\\outputs\\mastervault\\experiment_results_final\\restored\\malformed"
+      },
+      "independent_file_hashes_verified": true,
+      "archive_status": "skipped_no_net_savings",
+      "archive_path": null
+    }
+  ],
+  "all_independent_file_hashes_verified": true
+}
